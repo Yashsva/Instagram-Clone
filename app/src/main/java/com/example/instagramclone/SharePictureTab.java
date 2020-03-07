@@ -176,7 +176,7 @@ public class SharePictureTab extends Fragment implements View.OnClickListener {
 
         if(requestCode==2000)
         {
-            if(resultCode== Activity.RESULT_OK)
+            if(resultCode== Activity.RESULT_OK  &&  data!=null)
             {
                 try {
                     Uri selectedImage=data.getData();

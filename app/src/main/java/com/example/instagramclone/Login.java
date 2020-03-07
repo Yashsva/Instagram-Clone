@@ -1,8 +1,5 @@
 package com.example.instagramclone;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,18 +8,13 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.parse.FindCallback;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.parse.LogInCallback;
 import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
-
-import java.util.List;
-import java.util.Objects;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
@@ -107,6 +99,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                 Intent intent=new Intent(Login.this,SignUp.class);
                 startActivity(intent);
+                finish();
 
                 break;
         }
@@ -129,5 +122,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     {
         Intent intent=new Intent(Login.this,SocialMediaActivity.class);
         startActivity(intent);
+        finish();
     }
 }
