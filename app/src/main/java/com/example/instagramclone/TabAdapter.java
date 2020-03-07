@@ -1,5 +1,8 @@
 package com.example.instagramclone;
 
+import android.util.Log;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -9,15 +12,17 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class TabAdapter extends FragmentPagerAdapter {
 
 
-    public TabAdapter(@NonNull FragmentManager fm, int behavior) {
-        super(fm, behavior);
+    public TabAdapter(@NonNull FragmentManager fm) {
+        super(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
     }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
+        Log.i("App","fragment : "+ position);
         switch (position)
         {
+
             case 0:
                 ProfileTab profileTab=new ProfileTab();
                 return profileTab;

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.ProgressBar;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -14,6 +15,7 @@ public class SocialMediaActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tableLayout;
     private TabAdapter tabAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +30,12 @@ public class SocialMediaActivity extends AppCompatActivity {
 
         viewPager=findViewById(R.id.viewPager);
 
-        tabAdapter=new TabAdapter(getSupportFragmentManager(),2);
+        tabAdapter=new TabAdapter(getSupportFragmentManager());
         viewPager.setAdapter(tabAdapter);
 
         tableLayout=findViewById(R.id.tabLayout);
         tableLayout.setupWithViewPager(viewPager,false);
+
 
 
 
