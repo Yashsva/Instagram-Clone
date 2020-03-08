@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light"
+    android:background="#E9FAF8"
     android:onClick="ConstraintLayoutClicked"
     tools:context=".SignUp">
 
@@ -70,8 +70,9 @@
         android:layout_marginStart="150dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="150dp"
-        android:background="#B7E0EE"
+        android:background="#75B4AC"
         android:text="SignUp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPasswordSignUp" />
@@ -83,8 +84,9 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="162dp"
-        android:background="#B7E0EE"
+        android:background="#75B4AC"
         android:text="Login"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
